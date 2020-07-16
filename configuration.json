@@ -1,0 +1,15 @@
+{
+    "build_commands": [
+        {"current_dir": "rust", "command": "cargo", "args": ["build", "--release"]},
+        {"current_dir": "cpp", "command": "meson", "args": ["setup", "target", "--buildtype", "release"]},
+        {"current_dir": "cpp/target", "command": "meson", "args": ["compile"]}
+    ],
+    "executables": [
+        {"id": "cpp", "path": "cpp/target/propagate"},
+        {"id": "cpp-afspc", "path": "cpp/target/propagate_afspc"},
+        {"id": "cpp-fastmath", "path": "cpp/target/propagate_fastmath"},
+        {"id": "cpp-afspc-fastmath", "path": "cpp/target/propagate_afspc_fastmath"},
+        {"id": "rust", "path": "rust/target/release/propagate"},
+        {"id": "rust-afspc", "path": "rust/target/release/propagate_afspc"}
+    ]
+}

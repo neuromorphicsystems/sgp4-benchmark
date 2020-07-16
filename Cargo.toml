@@ -1,0 +1,31 @@
+[package]
+name = "sgp4_benchmarks"
+version = "0.1.0"
+authors = ["International Centre for Neuromorphic Systems", "Alexandre Marcireau"]
+description = "A comparison of different SGP4 implementations"
+homepage = "https://github.com/neuromorphicsystems/sgp4_benchmarks/"
+repository = "https://github.com/neuromorphicsystems/sgp4_benchmarks/"
+readme = "README.md"
+license-file = "LICENSE"
+keywords = ["SGP4", "SDP4", "TLE", "OMM"]
+categories = ["science"]
+edition = "2018"
+
+[[bin]]
+name = "accuracy"
+path = "src/accuracy.rs"
+
+[[bin]]
+name = "download"
+path = "src/download.rs"
+
+[[bin]]
+name = "speed"
+path = "src/speed.rs"
+
+[dependencies]
+rand = "0.7"
+serde = {version = "1.0", features = ["derive"]}
+serde_json = "1.0"
+sgp4 = {git = "https://github.com/neuromorphicsystems/sgp4"}
+ureq = {version = "1.3.0", features = ["json"]}

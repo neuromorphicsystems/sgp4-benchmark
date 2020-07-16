@@ -1,0 +1,19 @@
+[package]
+name = "propagate"
+version = "0.1.0"
+
+[dependencies]
+serde_json = "1.0"
+sgp4 = {git = "https://github.com/neuromorphicsystems/sgp4"}
+
+[[bin]]
+name = "propagate"
+path = "src/propagate.rs"
+
+[[bin]]
+name = "propagate_afspc"
+path = "src/propagate_afspc.rs"
+
+[profile.release]
+lto = true
+codegen-units = 1
