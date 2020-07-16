@@ -1,5 +1,5 @@
 # SGP4 benchmark
-A comparison of different SGP4 implementations:
+A comparison of two SGP4 implementations in different configurations:
 - `cpp`: the Celestrak implementation [[1]](#1) in improved mode
 - `cpp-afspc`: the Celestrak implementation [[1]](#1) in AFSPC compatibility mode
 - `cpp-fastmath`: the Celestrak implementation [[1]](#1) in improved mode with the `fast-math` compiler flag
@@ -7,7 +7,7 @@ A comparison of different SGP4 implementations:
 - `rust`: our Rust implementation in default mode
 - `rust-afspc`: our Rust implementation in AFSPC compatibility mode
 
-Our Rust implementation can be found at https://github.com/neuromorphicsystems/sgp4.
+The Rust implementation can be found at https://github.com/neuromorphicsystems/sgp4.
 
 ## Dependencies
 
