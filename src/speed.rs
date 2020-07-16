@@ -2,7 +2,7 @@ mod configuration;
 
 use rand::seq::SliceRandom;
 
-const SAMPLES: usize = 2;
+const SAMPLES: usize = 100;
 
 fn main() -> std::io::Result<()> {
     let root = configuration::root();
