@@ -33,7 +33,7 @@ Results are saved in `results.json` upon completion (values are in μs).
 
 To run the *speed* benchmark, use the command:
 ```
-cargo run --release --bin accuracy
+cargo run --release --bin speed
 ```
 
 ## Download
