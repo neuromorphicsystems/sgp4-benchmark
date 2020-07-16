@@ -18,7 +18,7 @@ The C++ and Rust implementations will be built when either benchmark (accuracy o
 
 ## Accuracy
 
-Accuracy calculates the maximum propagation error of each implementation with respect to the reference implementation (`cpp-afspc`) over the full catalogue (1 minute timestep over 24 hours).
+Accuracy measures the maximum propagation error of each implementation with respect to the reference implementation (`cpp-afspc`) over the full Celestrak catalogue (1 minute timestep over 24 hours).
 
 Results are printed in the terminal.
 
@@ -29,7 +29,7 @@ cargo run --release --bin accuracy
 
 ## Speed
 
-Speed measures the time it takes to propagate the full catalogue (1 minute timestep over 24 hours) using 100 samples per implementation.
+Speed measures the time it takes to propagate every satellite in the Celestrak catalogue (1 minute timestep over 24 hours) using a single thread. 100 values are sampled per implementation.
 
 Results are saved in `results.json` upon completion (values are in μs).
 
