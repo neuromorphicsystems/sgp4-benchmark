@@ -5,8 +5,8 @@
         {"current_dir": "cpp/target", "command": "meson", "args": ["compile"]}
     ],
     "executables": [
-        {"id": "cpp", "path": "cpp/target/propagate"},
         {"id": "cpp-afspc", "path": "cpp/target/propagate_afspc"},
+        {"id": "cpp", "path": "cpp/target/propagate"},
         {"id": "cpp-fastmath", "path": "cpp/target/propagate_fastmath"},
         {"id": "cpp-afspc-fastmath", "path": "cpp/target/propagate_afspc_fastmath"},
         {"id": "rust", "path": "rust/target/release/propagate"},

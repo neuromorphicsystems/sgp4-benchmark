@@ -14,6 +14,8 @@ Our Rust implementation can be found at https://github.com/neuromorphicsystems/s
 - Rust - https://rustup.rs
 - Meson - https://mesonbuild.com
 
+The C++ and Rust implementations will be built when either benchmark (accuracy or speed) is run for the first time.
+
 ## Accuracy
 
 Accuracy calculates the maximum propagation error of each implementation with respect to the reference implementation (`cpp-afspc`) over the full catalogue (1 minute timestep over 24 hours).
